@@ -1,0 +1,12 @@
+.Header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0.5rem;
+    background-color: springgreen;
+    text-align: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    
+}

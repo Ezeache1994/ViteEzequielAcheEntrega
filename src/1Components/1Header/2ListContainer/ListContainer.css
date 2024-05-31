@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=MuseoModerno:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.ListContainerLi{
+    display: flex;
+}
+
+.Nav{
+font-family: MuseoModerno;
+color: black !important;
+}
+
+

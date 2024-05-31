@@ -1,0 +1,14 @@
+.Container_of-CountItem{
+    justify-content: center;
+    display: flex;
+}
+
+.CountItem__Count{
+    display: flex;
+    justify-content: space-around;
+    padding: 0.3rem;
+}
+
+.CountItem__Button{
+    padding: 0.3rem;
+}

@@ -1,0 +1,17 @@
+/* ButtonDark.css */
+.DarkButton {
+    background-color: white;
+    color: springgreen;
+    border: 1px solid springgreen;
+    padding: 8px 16px;
+    cursor: pointer;    
+    border-radius: 1rem;
+    transition: 2s;
+  }
+  
+  .DarkButton:hover {
+    background-color: springgreen;
+    color:black;
+    transition: 2.8s;
+  }
+  

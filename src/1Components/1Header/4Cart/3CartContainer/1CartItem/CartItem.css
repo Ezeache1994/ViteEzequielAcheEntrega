@@ -1,0 +1,21 @@
+.CartItemContainer {
+    display: flex;
+    flex-direction: column; /* Alinea los elementos en columna */
+    justify-content: center; /* Centra verticalmente */
+    align-items: center; /* Centra horizontalmente */
+    width: 100%;
+
+}
+.CartItemContainer__image {
+    display: block;
+    margin: 0 auto;
+    max-width: 30%; /* Establece el ancho máximo */
+    max-height: 100%; /* Establece la altura máxima */
+}
+
+.Buttons{
+    padding: 0.2rem;
+    margin: 0.3rem;
+}
+
+

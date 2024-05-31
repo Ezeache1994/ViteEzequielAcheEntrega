@@ -1,0 +1,54 @@
+
+/* DonationDetailContainer.css */
+
+.DonationDetailContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+  
+  .DonationDetailContainer__image {
+    max-width: 45%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .DonationDetailContainer__title {
+    /* Estilos para el título */
+  }
+  
+  .DonationDetailContainer__description {
+    /* Estilos para la descripción */
+  }
+  
+  .DonationDetailContainer__logic {
+    /* Estilos para la lógica del contador */
+  }
+  
+  .DonationDetailContainer__button {
+    /* Estilos para el botón */
+  }
+  
+  .DonationDetailContainer__reason {
+    /* Estilos para la razón de donar */
+  }
+  
+  .DonationDetailContainer__reason-title {
+    /* Estilos para el título de la razón de donar */
+  }
+  
+  .DonationDetailContainer__reason-text {
+    /* Estilos para el texto de la razón de donar */
+  }
+  
+  .DonationDetailContainer__know-me {
+    /* Estilos para conocer más */
+  }
+  
+  .DonationDetailContainer__know-me-text {
+    /* Estilos para el texto de conocer más */
+  }
+  
+  
