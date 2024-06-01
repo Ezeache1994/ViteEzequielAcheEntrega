@@ -4,6 +4,7 @@ import CartDetails from "../2CartDetail/CartDetail";
 import "./CartContainer.css";
 import { Link } from "react-router-dom";
 
+
 export default function CartContainer() {
     const { cart, cartTotalDonation } = useContext(CartContext);
     
@@ -12,7 +13,7 @@ export default function CartContainer() {
             {cart.length === 0 ? (
                 <div className="LinkContainer">
                     <Link className="LinkFinalizar" to={"/check"}>
-                        <button>
+                        <button className="ButtonLink">
                             Finalizar Transacción
                         </button>
                     </Link>
@@ -22,6 +23,7 @@ export default function CartContainer() {
                     <CartDetails cart={cart} cartTotalDonation={cartTotalDonation} />
                 </div>
             )}
+
         </div>
     );
 }

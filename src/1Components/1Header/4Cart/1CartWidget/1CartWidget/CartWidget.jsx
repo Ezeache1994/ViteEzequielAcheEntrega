@@ -8,14 +8,15 @@ export default function CartWidget() {
   const { cartTotal } = useContext(CartContext);
 
   return (
-    <div>
+    <div id="cartWidget" hidden>
       <Link to={"/cart"}>
-      <CartIcon />
-      <span>{cartTotal}</span>
+        <CartIcon />
+        <span style={{color:"black", fontSize:"1.5rem"}}>{cartTotal}</span>
       </Link>
     </div>
   );
 }
+
 
 
 

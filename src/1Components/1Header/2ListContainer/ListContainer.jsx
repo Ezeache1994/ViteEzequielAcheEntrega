@@ -1,8 +1,13 @@
 import React from 'react';
 import { NavLink } from "react-router-dom";
 import "./ListContainer.css" ;
-const MisRutas = [
+import Brand from '../3Brand/Brand';
 
+const MisRutas = [
+    {
+        path:"/",
+        label:""
+    },
     {
         path: "/Category/Tecnologia",
         label: "Tecnologia "

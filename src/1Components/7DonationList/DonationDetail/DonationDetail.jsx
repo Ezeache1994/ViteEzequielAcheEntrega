@@ -15,11 +15,16 @@ export default function DonationDetail({ donation }) {
   const handleAddToCart = (count) => {
     if (count > 0) {
       addToCart(donation, count);
-      console.log("Datos del elemento añadido al carrito:", donation); // Agregar este console.log para capturar los datos
+      console.log("Datos del elemento añadido al carrito:", donation);
       console.log("usted ha donado:", count);
       console.log("ha escogido la iniciativa:", donation.title);
-      logDonationDetails(donation); // Llama a la función auxiliar aquí para detalles adicionales
+      logDonationDetails(donation); 
       reset();
+          // Mostrar el CartWidget removiendo el atributo 'hidden'
+    const cartWidget = document.getElementById("cartWidget");
+    if (cartWidget) {
+      cartWidget.hidden = false;
+    }
     }
   };
 
@@ -50,19 +55,20 @@ export default function DonationDetail({ donation }) {
           Donar
         </Button>
       </div>
-      <h4>
+
+      <h4 className="Business_volume">
           {donation.business_volume}
         </h4>
       <h1 className="DonationDetailContainer__reason-title">
         ¿
-        <span style={{ color: "springgreen", letterSpacing: "-0.1rem" }}>
+        <span className="span-Tittle" style={{ color: "springgreen", letterSpacing: "-0.1rem" }}>
           P
         </span>
         orque donarme?
       </h1>
-      <h3 className="DonationDetailContainer__reason-text">
+      <h5 className="DonationDetailContainer__reason-text">
         {donation.reason_To_Donate}
-      </h3>
+      </h5>
     </div>
   );
 }

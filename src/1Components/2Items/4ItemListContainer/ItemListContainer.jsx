@@ -8,7 +8,11 @@ export default function ItemListContainer({ category }) { // Agrega category com
 
     if (isLoading) return (
         <div style={{ textAlign: "center", display: "flex", justifyContent:"center" }}>
-<img className="imgCarga" style={{width:"500px", textAlign:"center",}} src="/public/HaloGive.png" alt="_blank" />
+            <img className="imgCarga" style={{width:"500px", textAlign:"center",}} src="/public/HaloGive.png" alt="_blank" />
+            <img className="imgCarga" style={{width:"500px", textAlign:"center",}} src="/public/HaloGive.png" alt="_blank" />
+            <img className="imgCarga" style={{width:"500px", textAlign:"center",}} src="/public/HaloGive.png" alt="_blank" />
+            <img className="imgCarga" style={{width:"500px", textAlign:"center",}} src="/public/HaloGive.png" alt="_blank" />
+            <img className="imgCarga" style={{width:"500px", textAlign:"center",}} src="/public/HaloGive.png" alt="_blank" />
         </div>
     );
 

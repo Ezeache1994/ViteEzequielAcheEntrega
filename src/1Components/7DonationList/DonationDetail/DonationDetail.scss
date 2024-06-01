@@ -1,8 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Piazzolla:ital,opsz,wght@0,8..30,100..900;1,8..30,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Trispace:wght@100..800&display=swap');
+
 .DonationDetailContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 1rem;
+  }
+
+  .DonationDetailContainer__title{
+    font-family:Trispace ;
+    margin: 0.5rem 0 2rem 0;
+    text-decoration:underline !important;
   }
   
   .DonationDetailContainer__image {
@@ -10,6 +19,20 @@
     height: auto;
     border-radius: 5px;
     margin-bottom: 20px;
+    border: 0.3rem black outset;
   }
   
- 
+  .DonationDetailContainer__reason-title{
+    font-family: Piazzolla;
+  }
+
+  .DonationDetailContainer__reason-text{
+    font-family: Piazzolla;
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+
+  .Business_volume{
+    margin: 1rem 0 1.5rem 0;
+    font-family: Trispace;
+  }
