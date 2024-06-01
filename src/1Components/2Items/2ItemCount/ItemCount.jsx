@@ -1,18 +1,20 @@
 import "./ItemCount.css"
+import { Button } from "react-bootstrap";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function ItemCount({credits,count,increment,decrement}){
     return(
         <div className="Container_of-CountItem" >
-            <div className="CountItem__Count"  >
-            <button className="CountItem__Button" onClick={decrement}>
+            <div style={{margin:"0 0 2rem 0"}} className="CountItem__Count"  >
+            <Button style={{margin:"0 1rem 0 1rem"}} variant="danger" size="md" className="CountItem__Button" onClick={decrement}>
                 -
-            </button>
+            </Button>
             <h1 className="CountItem__The--Counter" >
                 {count}
             </h1>
-                <button className="CountItem__Button" disabled={count >= credits} onClick={increment}>
+                <Button style={{margin:"0 1rem 0 1rem"}} variant="success" size="md" className="CountItem__Button" disabled={count >= credits} onClick={increment}>
                     +
-                </button>
+                </Button>
             </div>
         </div>
     )

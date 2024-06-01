@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Item.css"; // Importar estilos CSS
-
 export default function Item({ item }) {
   return (
       <div className="First--Container__all--Items"> {/* Agregar la clase contenedora */}

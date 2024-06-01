@@ -2,7 +2,9 @@ import React, { useContext } from "react";
 import "./CartItem.css";
 import CartContext from "../../2CartContext/1CartContext/CartContext";
 import { logDonationDetails } from "./logDonationDetails";
-import { Link } from "react-router-dom";
+
+import { Button } from "react-bootstrap";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function CartItem({ donation }) {
   const { removeFromCart, endDonation } = useContext(CartContext);
@@ -35,10 +37,10 @@ export default function CartItem({ donation }) {
       <p>{donation.product.description}</p>
 
       <div>
-      <button className="Buttons" onClick={() => removeFromCart(donation.product.id, donation.quantity)}>Eliminar todos</button>
-      
-      <button className="Buttons" onClick={handleEndDonation}>Donar</button>
+      <Button variant="danger" size="md" className="Buttons" onClick={() => removeFromCart(donation.product.id, donation.quantity)}>Eliminar todos</Button>      
+      <Button className="Buttons" variant="success" size="md" onClick={handleEndDonation}>Donar</Button>
       </div>
+      
     </div>
   );
 }

@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 2rem 0 0 0;
 }
 
 .Container_Inputs--Banner{
@@ -25,62 +26,31 @@ margin: 0 0 0 6rem;
     text-align: center;
 }
 
-.ContainersInfo {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-}
 
-.InputsUser {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 20px;
-    background-color: #0056b3;
-    padding: 3rem;
-    background-image: url('/Fondo.png');
-    background-position: center;
-    background-size: cover;
-    border-radius: 0.6rem;
-}
 
-.InputsFormUser {
-    display: flex;
-    flex-direction: column;
-}
 
-.Inputs {
-    display: block;
-    margin-bottom: 10px;
-    padding: 8px;
-    width: 100%;
-    max-width: 300px;
-    box-sizing: border-box;
-}
-
-.FinishButton {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
-.FinishButton:disabled {
-    background-color: #cccccc;
-    cursor: not-allowed;
-}
-
-.FinishButton:hover:enabled {
-    background-color: #0056b3;
-}
-
-.EmptyCartMessage {
-    text-align: center;
-}
 
 .LinkButton {
     text-decoration: none;
 }
 
+.LinkContainer {
+    margin: 20px; /* Ajusta el valor según sea necesario */
+}
 
+.LinkFinalizar {
+    text-decoration: none;
+}
+
+.LinkFinalizar button {
+    padding: 10px 20px;
+    background-color: springgreen;
+
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.LinkFinalizar button:hover {
+    background-color: rgb(11, 158, 84);
+}

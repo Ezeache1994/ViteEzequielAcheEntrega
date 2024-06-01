@@ -8,9 +8,8 @@ import DonationDetailContainer from "./1Components/7DonationList/DonationDetailC
 import CartProvider from "./1Components/1Header/4Cart/2CartContext/2CartProvider/CartProvider";
 import CartContainer from "./1Components/1Header/4Cart/3CartContainer/3CartContainer/CartContainer";
 import TransactionSummary from "./1Components/1Header/4Cart/4Transaction summary/transactionSummary";
-import { useEffect,useState } from "react";
-import { getFirestore, collection, getDoc } from "firebase/firestore";
-// En App.jsx
+import CartCheckOut from "./1Components/1Header/4Cart/3CartContainer/4CartCheckOut/CartCheckOut";
+
 function App() {
   const initialCart = localStorage.getItem("cart")
     ? JSON.parse(localStorage.getItem("cart"))
@@ -21,14 +20,13 @@ function App() {
       <ThemeProvider>
         <CartProvider initialCart={initialCart}>
           <Layout>
-
             <Routes>
               <Route path="/" element={<DonationList />} />
               <Route path="/Category/:CategoryName" element={<DonationList />} />
               <Route path="/product/:productId" element={<DonationDetailContainer />} />
               <Route path="/cart" element={<CartContainer />} />
+              <Route path="/check" element={<CartCheckOut/>} />
               <Route path="/summary" element= {<TransactionSummary/>}  />
-
             </Routes>
           </Layout>
         </CartProvider>
@@ -38,5 +36,6 @@ function App() {
 }
 
 export default App;
+
 
 

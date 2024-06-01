@@ -2,10 +2,7 @@ import React from 'react';
 import { NavLink } from "react-router-dom";
 import "./ListContainer.css" ;
 const MisRutas = [
-    {
-        path: "/",
-        label: " Home "
-    },
+
     {
         path: "/Category/Tecnologia",
         label: "Tecnologia "

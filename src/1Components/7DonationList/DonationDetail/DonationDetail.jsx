@@ -4,6 +4,9 @@ import "./DonationDetail.scss";
 import useCount from "../../5CustomHoock/1useCount";
 import CartContext from "../../1Header/4Cart/2CartContext/1CartContext/CartContext";
 import { logDonationDetails } from "../../1Header/4Cart/3CartContainer/1CartItem/logDonationDetails";
+import Button from 'react-bootstrap/Button';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 export default function DonationDetail({ donation }) {
   const { count, increment, decrement, reset } = useCount();
@@ -41,17 +44,18 @@ export default function DonationDetail({ donation }) {
         />
 
       <div>
-        <button disabled={count === 0} onClick={() => handleAddToCart(count)}>
+        <Button style={{margin:"0 1rem 0 1rem"}} Button variant="danger" size="md" onClick={handleReset}>
+          Reiniciar</Button>
+        <Button style={{margin:"0 1rem 0 1rem"}} variant="success" size="md"  disabled={count === 0} onClick={() => handleAddToCart(count)}>
           Donar
-        </button>
-        <button onClick={handleReset}>Reiniciar</button>
+        </Button>
       </div>
       <h4>
           {donation.business_volume}
         </h4>
       <h1 className="DonationDetailContainer__reason-title">
         ¿
-        <span style={{ color: "springgreen", letterSpacing: "-0.6rem" }}>
+        <span style={{ color: "springgreen", letterSpacing: "-0.1rem" }}>
           P
         </span>
         orque donarme?
