@@ -1,8 +1,15 @@
-# React + Vite
+# HaloGive
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Este proyecto es una aplicación creada con Vite JS + React
 
-Currently, two official plugins are available:
+##### Pasos para levantar el proyecto
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. Ejecutar `npm i` para instalar las dependencias.
+2. Ejecutar `npm run dev` para levantar la aplicación en modo desarrollo.
+
+##### Creador:
+- Ezequiel Ache
+
+##### Descripción:
+Este proyecto es una iniciativa de donaciones, en la cual se busca donar dinero a iniciativas privadas, es decir, a emprendedores que necesitan un período de incubación para que el dinero recibido funcione como un balón de oxígeno para sus negocios. ¡Aquí los negocios crecen como un jardín!
+
