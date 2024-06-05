@@ -4,21 +4,21 @@ import CartContext from "../../2CartContext/1CartContext/CartContext";
 import "./CartCheckOut.css"
 
 export default function CartCheckOut() {
-    const { cart } = useContext(CartContext); // Añade el uso del contexto del carrito
+    const { cart } = useContext(CartContext); 
     const [formData, setFormData] = useState({ name: "", email: "", phone: "" });
     const [isButtonDisabled, setIsButtonDisabled] = useState(true);
 
-    // Almacenar el carrito en localStorage
+
     useEffect(() => {
         localStorage.setItem("cart", JSON.stringify(cart));
     }, [cart]);
 
-    // Almacenar los datos del formulario en localStorage
+
     useEffect(() => {
         localStorage.setItem("formData", JSON.stringify(formData));
     }, [formData]);
 
-    // Función para manejar cambios en los inputs del formulario
+
     const handleInputChange = (e) => {
         const { name, value } = e.target;
         setFormData((prevFormData) => ({
@@ -27,13 +27,13 @@ export default function CartCheckOut() {
         }));
     };
 
-    // Función de validación para el correo electrónico
+
     const validateEmail = (email) => {
         const emailPattern = /^[a-zA-Z0-9._%+-]+@(hotmail|gmail|yahoo|outlook)\.com$/;
         return emailPattern.test(email);
     };
 
-    // Efecto para habilitar o deshabilitar el botón según el estado del formulario
+  
     useEffect(() => {
         const { name, email, phone } = formData;
         if (name && phone && validateEmail(email)) {

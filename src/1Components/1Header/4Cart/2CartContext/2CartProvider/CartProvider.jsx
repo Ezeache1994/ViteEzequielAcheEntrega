@@ -1,4 +1,3 @@
-// src/context/CartProvider.jsx
 import { useEffect, useState } from "react";
 import CartContext from "../1CartContext/CartContext";
 

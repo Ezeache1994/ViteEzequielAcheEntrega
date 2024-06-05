@@ -2,7 +2,7 @@ import React from 'react';
 import { NavLink } from "react-router-dom";
 import "./ListContainer.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPlay, faMicrochip,faPersonDigging,faVideo,faFireBurner } from '@fortawesome/free-solid-svg-icons';
+import { faPlay, faMicrochip,faPersonDigging,faVideo,faKitchenSet } from '@fortawesome/free-solid-svg-icons';
 
 const MisRutas = [
     {
@@ -19,7 +19,7 @@ const MisRutas = [
     },
     {
         path: "/Category/Cocina",
-        label: <><FontAwesomeIcon icon={faFireBurner} />  <>Cocina</> </>
+        label: <><FontAwesomeIcon icon={faKitchenSet} /> <>Cocina</> </>
     },
     {
         path: "/Category/Construccion",

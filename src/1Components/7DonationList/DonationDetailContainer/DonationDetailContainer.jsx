@@ -34,25 +34,6 @@ export default function DonationDetailContainer() {
     <h1 className="Loading">HaloGive
     </h1> 
     {/* Se repiten por razones esteticas para que cuando hagas scroll siempre se vea la palabra HaloGive */}
-    <h1 className="Loading">HaloGive
-    </h1>
-    <h1 className="Loading">HaloGive
-    </h1>
-    <h1 className="Loading">HaloGive
-    </h1>
-    <h1 className="Loading">HaloGive
-    </h1>
-    <h1 className="Loading">HaloGive
-    </h1>
-    <h1 className="Loading">HaloGive
-    </h1>
-    <h1 className="Loading">HaloGive
-    </h1>
-    <h1 className="Loading">HaloGive
-    </h1>
-    <h1 className="Loading">HaloGive
-    </h1>
-    
     </div>
     ;
   }

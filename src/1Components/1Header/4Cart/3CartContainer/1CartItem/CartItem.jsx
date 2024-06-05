@@ -9,7 +9,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 export default function CartItem({ donation }) {
   const { removeFromCart, endDonation } = useContext(CartContext);
 
-  // Llama a la función auxiliar para mostrar los detalles en la consola
+
   logDonationDetails(donation);
 
   const handleEndDonation = () => {

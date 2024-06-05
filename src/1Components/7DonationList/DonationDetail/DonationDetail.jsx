@@ -20,7 +20,7 @@ export default function DonationDetail({ donation }) {
       console.log("ha escogido la iniciativa:", donation.title);
       logDonationDetails(donation); 
       reset();
-          // Mostrar el CartWidget removiendo el atributo 'hidden'
+          
     const cartWidget = document.getElementById("cartWidget");
     if (cartWidget) {
       cartWidget.hidden = false;
@@ -30,7 +30,7 @@ export default function DonationDetail({ donation }) {
 
   const handleReset = () => {
     reset();
-    clearCart(); // Limpiar el carrito al reiniciar
+    clearCart(); 
   };
 
   return (

@@ -8,19 +8,18 @@ export default function TransactionSummary() {
     const [clicked, setClicked] = useState(false);
     const navigate = useNavigate();
 
-    // Cargar las donaciones desde el localStorage al montar el componente
     useEffect(() => {
         const storedDonations = JSON.parse(localStorage.getItem("donations")) || [];
         setDonations(storedDonations);
     }, []);
 
-    // Función para eliminar la información del local storage y redirigir al inicio
+
     const handleGoToStart = () => {
         localStorage.removeItem("donations");
         navigate("/");
     };
 
-    // Manejar el click en el botón
+
     const handleClick = () => {
         setClicked(true);
         handleGoToStart();

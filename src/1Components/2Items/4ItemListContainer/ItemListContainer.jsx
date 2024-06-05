@@ -3,7 +3,7 @@ import useDonations from "../../5CustomHoock/3useDonations";
 import ItemList from "../3ItemList/ItmeList";
 import"./ItemListContainer.scss"
 
-export default function ItemListContainer({ category }) { // Agrega category como prop
+export default function ItemListContainer({ category }) { 
     const { isLoading, products } = useDonations();
 
     if (isLoading) return (
@@ -16,7 +16,7 @@ export default function ItemListContainer({ category }) { // Agrega category com
         </div>
     );
 
-    // Si se proporciona una categoría, filtra los productos por esa categoría
+  
     const filteredProducts = category ? products.filter(product => product.Category === category) : products;
 
     return (
