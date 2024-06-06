@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Permanent+Marker&display=swap');
+
+.BannerContact-Contact{
+    background-image: url('/Contact_Fondo.png');
+    padding: 11rem;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    margin:6rem 0 0 0
+    }
+
+    .TextBanner{
+        text-align: center;
+        color: rgb(251, 247, 238);
+        font-family: Concert One
+        ;
+        font-size: 5rem;
+    }
+
+    .Bootsrap-Form_Contact{
+        margin: 4rem 0 0 0;
+    }
+
+
+
+
+
+
+

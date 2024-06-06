@@ -1,3 +1,4 @@
+import ButtonFooter from "./ButtonFooter/ButtonFooter";
 import"./Footer"  ;
 export default function Footer(){
     return(
@@ -25,6 +26,9 @@ export default function Footer(){
             </figure>
             </section>
             </div>
+
+            <ButtonFooter/>
+
             <h1 style={{textAlign:"center"}}>
             Todos los derechos reservados para Halo Give Corp Latin America © 
             

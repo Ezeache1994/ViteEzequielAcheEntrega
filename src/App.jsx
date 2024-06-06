@@ -9,6 +9,7 @@ import CartProvider from "./1Components/1Header/4Cart/2CartContext/2CartProvider
 import CartContainer from "./1Components/1Header/4Cart/3CartContainer/3CartContainer/CartContainer";
 import TransactionSummary from "./1Components/1Header/4Cart/4Transaction summary/transactionSummary";
 import CartCheckOut from "./1Components/1Header/4Cart/3CartContainer/4CartCheckOut/CartCheckOut";
+import Contact from "./1Components/8Contact/Contact";
 
 function App() {
   const initialCart = localStorage.getItem("cart")
@@ -27,6 +28,7 @@ function App() {
               <Route path="/cart" element={<CartContainer />} />
               <Route path="/check" element={<CartCheckOut/>} />
               <Route path="/summary" element= {<TransactionSummary/>}  />
+              <Route path="/contact" element= {<Contact/>}  />
             </Routes>
           </Layout>
         </CartProvider>
