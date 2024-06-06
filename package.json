@@ -21,6 +21,7 @@
     "react-bootstrap": "^2.10.2",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.23.1",
+    "react-scroll-to-top": "^3.0.0",
     "sass": "^1.77.4"
   },
   "devDependencies": {

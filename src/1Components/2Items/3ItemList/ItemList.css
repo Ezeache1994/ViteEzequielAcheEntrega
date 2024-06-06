@@ -1,3 +1,9 @@
+.Container_ofContainers_ItemList{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
 .item--list__container{
     display: flex;
     flex-wrap: wrap;
